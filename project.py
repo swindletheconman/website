@@ -8,6 +8,6 @@ if st.button("Snowflake"):
     st.snow()
     
 if st.button("Balloon"):
-    st.button()
+    st.balloons()
     
 st.write("I'll put something great here so stay tunned")
