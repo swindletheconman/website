@@ -3,11 +3,11 @@ import pandas as pd
 
 data = pd.read_excel('./pages/source.xlsx')
 
-st.dataframe(data)
+#st.dataframe(data)
 
 #develop search criteria
 criteria1 = data['category'] == 'non food'
-criteria2 = data['store_name'] == 'indomaret'
+criteria2 = data['store_name'] == 'Indomaret'
 criteria3 = (criteria1) & (criteria2)
 criteria4 = data['price'] >= 10000
 criteria5 = data['price'] <= 30000
