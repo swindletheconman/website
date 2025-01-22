@@ -11,7 +11,7 @@ criteria2 = data['store_name'] == 'indomaret'
 criteria3 = (criteria1) & (criteria2)
 criteria4 = data['price'] >= 10000
 criteria5 = data['price'] <= 30000
-criteria3 = (criteria4) & (criteria5)
+criteria6 = (criteria4) & (criteria5)
 
 #to apply the criteria
 st.dataframe(data[criteria1])
