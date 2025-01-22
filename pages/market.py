@@ -2,8 +2,10 @@ import streamlit as st
 import pandas as pd
 
 data = pd.read_excel('./pages/source.xlsx')
+st.dataframe(data)
 
-#st.dataframe(data)
+category_values = data['category'].unique()
+selected _category = st.selectbox("Seclect Category", options=category_values)
 
 #develop search criteria
 criteria1 = data['category'] == 'non food'
