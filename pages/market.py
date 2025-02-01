@@ -7,6 +7,9 @@ st.dataframe(data)
 category_values = data['category'].unique()
 selected_category = st.selectbox("Seclect Category", options=category_values)
 
+store_values = data['store_name'].unique()
+selected_category = st.multiselectbox("Seclect store", options=category_values)
+
 #develop search criteria
 criteria1 = data['category'] == selected_category
 criteria2 = data['store_name'] == 'Indomaret'
