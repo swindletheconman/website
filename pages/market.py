@@ -11,7 +11,7 @@ store_values = data['store_name'].unique()
 selected_store = st.multiselect("Seclect store", options=store_values,default=store_values)
 
 minimum_price = data['price'].min()
-maximum_price = data['price'].min()
+maximum_price = data['price'].max()
 
 price_range = st.slider("Price range",min_value=minimum_price,max_value=maximum_price)
 
