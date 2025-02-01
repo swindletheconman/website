@@ -5,7 +5,7 @@ data = pd.read_excel('./pages/source.xlsx')
 st.dataframe(data)
 
 category_values = data['category'].unique()
-selected_category = st.selectbox("Seclect Category", options=category_values)
+selected_category = st.multiselect("Seclect Category", options=category_values)
 
 store_values = data['store_name'].unique()
 selected_store = st.multiselect("Seclect store", options=store_values,default=store_values)
