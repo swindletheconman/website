@@ -13,7 +13,7 @@ selected_store = st.multiselect("Seclect store", options=store_values,default=st
 minimum_price = data['price'].min()
 maximum_price = data['price'].min()
 
-price_range = st.slider("Price range"'min_value=minimum_price,max_value=maximum_price,value=medimum_price)
+price_range = st.slider("Price range",min_value=minimum_price,max_value=maximum_price)
 
 #develop search criteria
 criteria1 = data['category'].isin(selected_category)
