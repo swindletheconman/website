@@ -8,11 +8,10 @@ category_values = data['category'].unique()
 selected_category = st.selectbox("Seclect Category", options=category_values)
 
 store_values = data['store_name'].unique()
-selected_category = st.multiselectbox("Seclect store", options=category_values)
-
+selected_store = st.multiselectbox("Seclect store", options=store_values,default=store_values)
 #develop search criteria
-criteria1 = data['category'] == selected_category
-criteria2 = data['store_name'] == 'Indomaret'
+criteria1 = data['category'].isin(selected_category)
+criteria2 = data['store_name'].isin(selected_category)
 criteria3 = (criteria1) & (criteria2)
 criteria4 = data['price'] >= 10000
 criteria5 = data['price'] <= 30000
