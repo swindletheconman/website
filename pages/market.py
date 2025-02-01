@@ -18,7 +18,10 @@ price_range = st.slider("Price range",min_value=minimum_price,max_value=maximum_
 #develop search criteria
 criteria1 = data['category'].isin(selected_category)
 criteria2 = data['store_name'].isin(selected_store)
-criteria3 = (criteria1) & (criteria2)
+criteria3 = data['price'] <= price_range
+
+join_criteria = (criteria1) & (criteria2) & (criteria3)
+
 criteria4 = data['price'] >= 10000
 criteria5 = data['price'] <= 30000
 criteria6 = (criteria4) & (criteria5)
