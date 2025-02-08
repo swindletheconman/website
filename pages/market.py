@@ -39,8 +39,13 @@ with columns[1]:
 
 row_number = len(data[join_criteria])
 for i in range(row_number):
-  with st.container(border=True):
-    st.image(data.iloc[i]['picture'])
+  if i%2==0: #for even number
+    col = columns[0]
+  else:
+    col = columns[1]
+  with col:
+    with st.container(border=True):
+      st.image(data.iloc[i]['picture'])
 
 criteria4 = data['price'] >= 10000
 criteria5 = data['price'] <= 30000
