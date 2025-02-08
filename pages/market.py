@@ -39,7 +39,7 @@ with columns[1]:
 
 row_number = len(join_criteria)
 for i in range(row_number):
-  print(join_criteria.loc)
+  st.text(join_criteria.loc[i])
 
 criteria4 = data['price'] >= 10000
 criteria5 = data['price'] <= 30000
