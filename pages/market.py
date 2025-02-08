@@ -24,6 +24,9 @@ join_criteria = (criteria1) & (criteria2) & (criteria3)
 
 #display the picture
 st.image('./images/sabun_cuci_piring.jpeg')
+st.image('./images/blueband.jpeg')
+st.image('./images/margarin_filma.jpeg')
+st.image('./images/lem_kertas.jpeg')
 
 criteria4 = data['price'] >= 10000
 criteria5 = data['price'] <= 30000
