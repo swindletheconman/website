@@ -37,7 +37,7 @@ with columns[1]:
   with st.container(border=True):
     st.image('./images/lem_kertas.jpeg')
 
-row_number = len(join_criteria)
+row_number = len(data[join_criteria])
 for i in range(row_number):
   with st.container(border=True):
     st.text(data.iloc[i]['picture'])
