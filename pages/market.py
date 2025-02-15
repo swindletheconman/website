@@ -32,7 +32,7 @@ columns = st.columns(4)
 
 row_number = len(data[join_criteria])
 for i in range(row_number):
-  if i%2==0: #for even number
+  if i%4==0: #for even number
     col = columns[0]
   elif i%4 == 1:
     col = columns[1]
