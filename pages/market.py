@@ -52,9 +52,9 @@ for i in range(row_number):
       if st.button("Purchase item", key= "a"+str(i)):
         st.write("Thank you for buying from us!")
         
-criteria4 = data['price'] >= 10000
-criteria5 = data['price'] <= 30000
-criteria6 = (criteria4) & (criteria5)
+#criteria4 = data['price'] >= 10000
+#criteria5 = data['price'] <= 30000
+#criteria6 = (criteria4) & (criteria5)
 
 #to apply the criteria
 #st.dataframe(data[criteria1])
