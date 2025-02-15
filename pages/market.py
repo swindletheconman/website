@@ -50,7 +50,9 @@ for i in range(row_number):
       st.write(data.iloc[i]['name'])
       st.write(data.iloc[i]['price'])
       st.write(data.iloc[i]['store_name'])
-
+      if st.button("Add to Cart", key= str(i)):
+        st.write("item added to cart")
+        
 criteria4 = data['price'] >= 10000
 criteria5 = data['price'] <= 30000
 criteria6 = (criteria4) & (criteria5)
