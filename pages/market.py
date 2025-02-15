@@ -25,17 +25,17 @@ join_criteria = (criteria1) & (criteria2) & (criteria3)
 #display the picture
 columns = st.columns(2)
 
-with columns[0]:
-  with st.container(border=True):
-    st.image('./images/sabun_cuci_piring.jpeg')
-  with st.container(border=True):
-    st.image('./images/blueband.jpeg')
+#with columns[0]:
+#  with st.container(border=True):
+#    st.image('./images/sabun_cuci_piring.jpeg')
+#  with st.container(border=True):
+#    st.image('./images/blueband.jpeg')
 
-with columns[1]:
-  with st.container(border=True):
-    st.image('./images/margarin_filma.jpeg')
-  with st.container(border=True):
-    st.image('./images/lem_kertas.jpeg')
+#with columns[1]:
+#  with st.container(border=True):
+#    st.image('./images/margarin_filma.jpeg')
+#  with st.container(border=True):
+#    st.image('./images/lem_kertas.jpeg')
 
 row_number = len(data[join_criteria])
 for i in range(row_number):
@@ -43,6 +43,7 @@ for i in range(row_number):
     col = columns[0]
   else:
     col = columns[1]
+    
   with col:
     with st.container(border=True):
       st.image(data.iloc[i]['picture'])
