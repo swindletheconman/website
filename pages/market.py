@@ -47,9 +47,9 @@ for i in range(row_number):
   with col:
     with st.container(border=True):
       st.image(data.iloc[i]['picture'])
-      st.image(data.iloc[i]['name'])
-      st.image(data.iloc[i]['price'])
-      st.image(data.iloc[i]['store_name'])
+      st.write(data.iloc[i]['name'])
+      st.write(data.iloc[i]['price'])
+      st.write(data.iloc[i]['store_name'])
 
 criteria4 = data['price'] >= 10000
 criteria5 = data['price'] <= 30000
