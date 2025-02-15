@@ -28,29 +28,17 @@ criteria3 = data['price'] <= price_range
 join_criteria = (criteria1) & (criteria2) & (criteria3)
 
 #display the picture
-columns = st.columns(2)
-
-#with columns[0]:
-#  with st.container(border=True):
-#    st.image('./images/sabun_cuci_piring.jpeg')
-#  with st.container(border=True):
-#    st.image('./images/blueband.jpeg')
-
-#with columns[1]:
-#  with st.container(border=True):
-#    st.image('./images/margarin_filma.jpeg')
-#  with st.container(border=True):
-#    st.image('./images/lem_kertas.jpeg')
+columns = st.columns(4)
 
 row_number = len(data[join_criteria])
 for i in range(row_number):
   if i%2==0: #for even number
     col = columns[0]
-  elif i%2 == 1:
+  elif i%4 == 1:
     col = columns[1]
-  elif i%2 == 2:
+  elif i%4 == 2:
     col = columns[2]
-  elif i%2 == 3:
+  else:
     col = columns[3]
     
   with col:
