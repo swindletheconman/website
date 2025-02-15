@@ -59,7 +59,7 @@ criteria6 = (criteria4) & (criteria5)
 #to apply the criteria
 #st.dataframe(data[criteria1])
 #st.dataframe(data[criteria2])
-st.dataframe(data[criteria3])
+#st.dataframe(data[criteria3])
 #st.dataframe(data[criteria4])
 #st.dataframe(data[criteria5])
 #st.dataframe(data[criteria6])
