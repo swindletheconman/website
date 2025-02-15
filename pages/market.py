@@ -5,6 +5,7 @@ st.set_page_config(layout='wide')
 
 data = pd.read_excel('./pages/source.xlsx')
 #st.dataframe(data)
+column1,column2,column3 = st.column(3)
 
 with column1:
   category_values = data['category'].unique()
