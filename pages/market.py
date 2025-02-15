@@ -46,8 +46,12 @@ row_number = len(data[join_criteria])
 for i in range(row_number):
   if i%2==0: #for even number
     col = columns[0]
-  else:
+  elif i%2 == 1:
     col = columns[1]
+  elif i%2 == 2:
+    col = columns[2]
+  elif i%2 == 3:
+    col = columns[3]
     
   with col:
     with st.container(border=True):
