@@ -47,15 +47,3 @@ for i in range(data_length):
             st.write("item added to cart")
           if st.button("Purchase item", key= "a"+str(i)):
             st.write("Thank you for buying from us!")
-        
-#criteria4 = data['price'] >= 10000
-#criteria5 = data['price'] <= 30000
-#criteria6 = (criteria4) & (criteria5)
-
-#to apply the criteria
-#st.dataframe(data[criteria1])
-#st.dataframe(data[criteria2])
-#st.dataframe(data[criteria3])
-#st.dataframe(data[criteria4])
-#st.dataframe(data[criteria5])
-#st.dataframe(data[criteria6])
