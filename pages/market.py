@@ -28,30 +28,28 @@ criteria3 = data['price'] <= price_range
 
 join_criteria = (criteria1) & (criteria2) & (criteria3)
 
+ncolumns = st.number_input("Column Configuration",min_value = 1, value = 4,step = 1)
+columns = st.columns(ncolumns)
+
 #display the picture
 columns = st.columns(4)
 
-row_number = len(data[join_criteria])
-for i in range(row_number):
-  if i%4==0: #for even number
-    col = columns[0]
-  elif i%4 == 1:
-    col = columns[1]
-  elif i%4 == 2:
-    col = columns[2]
-  else:
-    col = columns[3]
-    
-  with col:
-    with st.container(border=True):
-      st.image(data.iloc[i]['picture'])
-      st.write(data.iloc[i]['name'])
-      st.write(data.iloc[i]['price'])
-      st.write(data.iloc[i]['store_name'])
-      if st.button("Add to Cart", key= str(i)):
-        st.write("item added to cart")
-      if st.button("Purchase item", key= "a"+str(i)):
-        st.write("Thank you for buying from us!")
+data_length = len(data[join_criteria])
+
+for i in range(data_length):
+  for c in range(ncolumns):
+    if i%ncolumns == c:
+      col = columns[c]  
+      with col:
+        with st.container(border=True):
+          st.image(data.iloc[i]['picture'])
+          st.write(data.iloc[i]['name'])
+          st.write(data.iloc[i]['price'])
+          st.write(data.iloc[i]['store_name'])
+          if st.button("Add to Cart", key= str(i)):
+            st.write("item added to cart")
+          if st.button("Purchase item", key= "a"+str(i)):
+            st.write("Thank you for buying from us!")
         
 #criteria4 = data['price'] >= 10000
 #criteria5 = data['price'] <= 30000
