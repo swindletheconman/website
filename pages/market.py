@@ -31,9 +31,6 @@ join_criteria = (criteria1) & (criteria2) & (criteria3)
 ncolumns = st.number_input("Column Configuration",min_value = 1, value = 4,step = 1)
 columns = st.columns(ncolumns)
 
-#display the picture
-columns = st.columns(4)
-
 data_length = len(data[join_criteria])
 
 for i in range(data_length):
