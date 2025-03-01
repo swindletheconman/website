@@ -3,7 +3,9 @@ import os
 
 folder = os.listdir('images')
 length_of_images = len(folder)
+
 ncolumns = 5
+columns = st.columns(ncolumns)
 
 for i in range(length_of_images):
   for c in range(ncolumns):
