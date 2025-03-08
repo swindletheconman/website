@@ -20,6 +20,7 @@ with leftcolumn:
 
   with st.container(border=True):
     st.write("Total:")
+    total_amount = df['amount'].sum()
 
   with st.container(border=True):
     st.write("Payment:")
