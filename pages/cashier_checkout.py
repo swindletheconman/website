@@ -8,7 +8,7 @@ dummy_data = {'description':['blueband','bread','egg'],
               'quantity':[1,2,3]}
 
 df = pd.DataFrame(dummy_data)
-dummy_data['amount'] = dummy_data['price'] * dummy_data['quantity']
+df['amount'] = df['price'] * df['quantity']
 
 leftcolumn,rightcolumn = st.columns(2)
 
