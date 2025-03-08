@@ -12,6 +12,7 @@ with leftcolumn:
   pass
   with st.container(border=True):
     st.write("Check-out items:")
+    st.dataframe(dummy_data)
 
   with st.container(border=True):
     st.write("Total:")
