@@ -16,7 +16,7 @@ with leftcolumn:
   pass
   with st.container(border=True):
     st.write("Check-out items:")
-    st.dataframe(dummy_data)
+    st.dataframe(df)
 
   with st.container(border=True):
     st.write("Total:")
