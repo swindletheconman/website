@@ -6,6 +6,8 @@ st.set_page_config(layout='wide')
 dummy_data = {'description':['blueband','bread','egg'],
               'price':[12000,18000,15000],
               'quantity':[1,2,3]}
+
+df = pd.DataFrame(dummy_data)
 dummy_data['amount'] = dummy_data['price'] * dummy_data['quantity']
 
 leftcolumn,rightcolumn = st.columns(2)
