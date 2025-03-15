@@ -14,7 +14,7 @@ def printreceipt():
   content = f'my shop\n'
   content = f'----------\n'
   content = f'----------\n'
-  
+  return content 
 
 leftcolumn,rightcolumn = st.columns(2)
 
@@ -48,4 +48,5 @@ with leftcolumn:
 with rightcolumn:
   pass
   with st.container(border=True):
-    st.write('right')
+    c = printreceipt()
+    st.write(c)
