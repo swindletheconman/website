@@ -10,6 +10,12 @@ dummy_data = {'description':['blueband','bread','egg'],
 df = pd.DataFrame(dummy_data)
 df['amount'] = df['price'] * df['quantity']
 
+def printreceipt():
+  content = f'my shop\n'
+  content = f'----------\n'
+  content = f'----------\n'
+  
+
 leftcolumn,rightcolumn = st.columns(2)
 
 with leftcolumn:
