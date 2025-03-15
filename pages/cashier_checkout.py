@@ -14,7 +14,7 @@ def printreceipt():
   content = f'my shop\n'
   content = f'----------\n'
   content = f'----------\n'
-  return content 
+  return content
 
 leftcolumn,rightcolumn = st.columns(2)
 
