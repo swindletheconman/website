@@ -32,6 +32,13 @@ with leftcolumn:
     return_amount = payment_received - total_amount
     st.write(f'{return_amount}')
 
+  with st.container():
+    if st.button("print receipt"):
+      if return_amount >= 0:
+        printreceipt()
+      else:
+        st.warning('payment must be more or equal than the purchase')
+
 with rightcolumn:
   pass
   with st.container(border=True):
