@@ -51,9 +51,3 @@ with leftcolumn:
         printreceipt()
       else:
         st.warning('payment must be more or equal than the purchase')
-
-with rightcolumn:
-  pass
-  with st.container(border=True):
-    c = printreceipt()
-    st.write(c)
