@@ -33,6 +33,12 @@ def printreceipt():
     white_space = " " * (receipt_text_width - (len(qty_desc) + len(amount)))
     
     content += f'{qty_desc}{white_space}{amount}\n'
+
+  content += f'-------------------------\n'
+  content += f'Total   : {total_amount}\n'
+  content += f'Payment : {payment_received}\n'
+  content += f'Return  : {return_amount}\n'
+  content += f'-------------------------\n'
   
   with rightcolumn:
     st.code(content)
