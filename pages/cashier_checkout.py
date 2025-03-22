@@ -42,6 +42,7 @@ def printreceipt():
   
   with rightcolumn:
     st.code(content)
+    st.download_button("Download",content)
 
 leftcolumn,rightcolumn = st.columns(2)
 
