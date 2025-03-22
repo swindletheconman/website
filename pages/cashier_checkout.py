@@ -1,5 +1,6 @@
 import streamlit as st
 import pandas as pd
+import datetime import datetime
 
 st.set_page_config(layout='wide')
 
@@ -11,10 +12,16 @@ df = pd.DataFrame(dummy_data)
 df['amount'] = df['price'] * df['quantity']
 
 def printreceipt():
+  receipt_text_width = 24
+
+  current_time = datetime.now()
+  current_time_str = current_time.strftime("%d %m %Y %H %M %S")
+  
   content = f'my shop\n'
-  content += f'----------\n'
-  content += f'----------\n'
-  return content
+  content += f'Purchase Receipt\n'
+  content += f'{current_time_str}\n'
+  content += f'------------------\n'
+
 
 leftcolumn,rightcolumn = st.columns(2)
 
