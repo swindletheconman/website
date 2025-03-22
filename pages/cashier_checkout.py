@@ -30,7 +30,9 @@ def printreceipt():
     qty_desc = f'{description} x{quantity}'
     amount = f'{amount}'
 
-    content += f'{qty_desc} {amount}\n'
+    white_space = " " * (receipt_text_width - (len(qty_desc) + len(amount)))
+    
+    content += f'{qty_desc}{white_space}{amount}\n'
   
   with rightcolumn:
     st.code(content)
