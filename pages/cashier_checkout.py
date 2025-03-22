@@ -22,6 +22,8 @@ def printreceipt():
   content += f'{current_time_str}\n'
   content += f'------------------\n'
 
+  with rightcolumn:
+    st.code(content)
 
 leftcolumn,rightcolumn = st.columns(2)
 
