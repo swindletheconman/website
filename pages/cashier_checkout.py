@@ -22,6 +22,16 @@ def printreceipt():
   content += f'{current_time_str}\n'
   content += f'------------------\n'
 
+  for i in range(len(df)):
+    quantity = df.iloc[i]['quantity']
+    description = df.iloc[i]['description']
+    amount = df.iloc[i]['amount']
+
+    qty_desc = f'{description} x{quantity}'
+    amount = f'{amount}'
+
+    content += f'{qty_desc} {amount}\n'
+  
   with rightcolumn:
     st.code(content)
 
