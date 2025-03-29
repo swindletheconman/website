@@ -8,10 +8,10 @@ st.write("Security: uploaded data is not stored in github repository")
 
 pages = {
     "Prodjects" : [
-        st.Page("./pages/Convsion.py", title = "Converter"),
-        st.Page("./pages/Market.py", title - "Online Store"),
-        st.Page("./pages/Cashier_checkout.py", title - "Cashier"),
-        st.Page("./pages/04_Triangle.py", title = "Triangle")
+        st.Page("./pages/Conversion.py", title = "Converter"),
+        st.Page("./pages/market.py", title = "Online Store"),
+        st.Page("./pages/cashier_checkout.py", title = "Cashier"),
+        st.Page("./pages/Triangle.py", title = "Triangle")
     ],
     "Tools" : [
         st.Page("./pages/photo gallery.py", title = "Rotate PDF"),
