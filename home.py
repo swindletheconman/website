@@ -16,7 +16,6 @@ pages = {
     "Tools" : [
         st.Page("./pages/photo gallery.py", title = "Rotate PDF"),
         st.Page("./pages/newapp.py", title = "Inventory Simulation"),
-
     ],
 }
 
