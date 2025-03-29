@@ -18,7 +18,7 @@ st.write("I'll put something great here so stay tunned")
 pages = {
     "Prodjects" : [
         st.Page("./pages/Conversion.py", title = "Converter"),
-        st.Page("./pages/Market.py", title = "Online Store"),
+        st.Page("./pages/market.py", title = "Online Store"),
         st.Page("./pages/Cashier_checkout.py", title = "Cashier"),
         st.Page("./pages/04_Triangle.py", title = "Triangle")
     ],
