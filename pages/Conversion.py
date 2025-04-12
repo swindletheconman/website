@@ -1,7 +1,5 @@
 import streamlit as st
 
-
-st.set_page_config(layout='wide')
 st.title("converter")
 
 #dictionaryfor units of conversion factor. unit name is key, factor is the value.
